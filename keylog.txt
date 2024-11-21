@@ -1,0 +1,1020 @@
+                                                    
+──(user㉿user)-[~/Documents]
+└─$ python3
+Python 3.12.7 (main, Nov  8 2024, 17:55:36) [GCC 14.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pynput import keyboard
+>>> 
+>>> # This function will be called whenever a key is pressed
+>>> def on_press(key):
+...     try:
+...         print(f"Key {key.char} pressed")
+...     except AttributeError:
+...         print(f"Special key {key} pressed")
+... 
+>>> # This function will be called whenever a key is released
+>>> def on_release(key):
+...     print(f"Key {key} released")
+...     if key == keyboard.Key.esc:  # Stop listener on 'Esc' key
+...         return False
+... 
+>>> # Set up the listener
+>>> with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+...     listener.join()
+... 
+Key Key.enter released
+Special key Key.enter pressed
+
+Key Key.enter released
+Key a pressed
+Key 'a' released
+Key f pressed
+Key 'f' released
+Key t pressed
+Key 't' released
+Key e pressed
+Key 'e' released
+Key r pressed
+Key 'r' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key u pressed
+Key 'u' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key y pressed
+Key 'y' released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Key o pressed
+Key 'o' released
+Key n pressed
+Key 'n' released
+Key 3 pressed
+Key '3' released
+Special key Key.space pressed
+Key Key.space released
+Key a pressed
+Key 'a' released
+Key n pressed
+Key 'n' released
+Key d pressed
+Key 'd' released
+Special key Key.space pressed
+Key Key.space released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key l pressed
+Key 'l' released
+Key o pressed
+Key 'o' released
+Key g pressed
+Key 'g' released
+Key g pressed
+Key 'g' released
+Key e pressed
+Key 'e' released
+Key r pressed
+Key 'r' released
+Special key Key.space pressed
+Key Key.space released
+Key c pressed
+Key 'c' released
+Key o pressed
+Key 'o' released
+Key d pressed
+Key 'd' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Key n pressed
+Key 'n' released
+Key t pressed
+Key 't' released
+Key o pressed
+Key 'o' released
+Special key Key.space pressed
+Key Key.space released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key s pressed
+Key 's' released
+Key e pressed
+Key 'e' released
+Special key Key.backspace pressed
+Key Key.backspace released
+Key h pressed
+Key 'h' released
+Key e pressed
+Key 'e' released
+Key l pressed
+Key 'l' released
+Key l pressed
+Key 'l' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key o pressed
+Key 'o' released
+Key u pressed
+Key 'u' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key u pressed
+Key 'u' released
+Key t pressed
+Key 't' released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.enter released
+Key Key.shift_r released
+Key w pressed
+Key 'w' released
+Key h pressed
+Key 'h' released
+Key a pressed
+Key 'a' released
+Key t pressed
+Key 't' released
+Key s pressed
+Key 's' released
+Special key Key.space pressed
+Key Key.space released
+Key n pressed
+Key 'n' released
+Key e pressed
+Key 'e' released
+Key x pressed
+Key 'x' released
+Key t pressed
+Key 't' released
+Special key Key.shift_r pressed
+Key ? pressed
+Key Key.shift_r released
+Key '/' released
+Special key Key.enter pressed
+Key Key.enter released
+                                                  ┌──(user㉿user)-[~]
+└─$ cd ~/Documents            
+                                                    
+┌──(user㉿user)-[~/Documents]
+└─$ ls
+'caesar cipher algorithm'   pimpmykali.sh
+ pimpmykali.log            'python3 keylogger.pye'
+                                                    
+┌──(user㉿user)-[~/Documents]
+└─$ python3
+Python 3.12.7 (main, Nov  8 2024, 17:55:36) [GCC 14.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pynput import keyboard
+>>> 
+>>> # This function will be called whenever a key is pressed
+>>> def on_press(key):
+...     try:
+...         print(f"Key {key.char} pressed")
+...     except AttributeError:
+...         print(f"Special key {key} pressed")
+... 
+>>> # This function will be called whenever a key is released
+>>> def on_release(key):
+...     print(f"Key {key} released")
+...     if key == keyboard.Key.esc:  # Stop listener on 'Esc' key
+...         return False
+... 
+>>> # Set up the listener
+>>> with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+...     listener.join()
+... 
+Key Key.enter released
+Special key Key.enter pressed
+
+Key Key.enter released
+Key a pressed
+Key 'a' released
+Key f pressed
+Key 'f' released
+Key t pressed
+Key 't' released
+Key e pressed
+Key 'e' released
+Key r pressed
+Key 'r' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key u pressed
+Key 'u' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key y pressed
+Key 'y' released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Key o pressed
+Key 'o' released
+Key n pressed
+Key 'n' released
+Key 3 pressed
+Key '3' released
+Special key Key.space pressed
+Key Key.space released
+Key a pressed
+Key 'a' released
+Key n pressed
+Key 'n' released
+Key d pressed
+Key 'd' released
+Special key Key.space pressed
+Key Key.space released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key l pressed
+Key 'l' released
+Key o pressed
+Key 'o' released
+Key g pressed
+Key 'g' released
+Key g pressed
+Key 'g' released
+Key e pressed
+Key 'e' released
+Key r pressed
+Key 'r' released
+Special key Key.space pressed
+Key Key.space released
+Key c pressed
+Key 'c' released
+Key o pressed
+Key 'o' released
+Key d pressed
+Key 'd' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Key n pressed
+Key 'n' released
+Key t pressed
+Key 't' released
+Key o pressed
+Key 'o' released
+Special key Key.space pressed
+Key Key.space released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key s pressed
+Key 's' released
+Key e pressed
+Key 'e' released
+Special key Key.backspace pressed
+Key Key.backspace released
+Key h pressed
+Key 'h' released
+Key e pressed
+Key 'e' released
+Key l pressed
+Key 'l' released
+Key l pressed
+Key 'l' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key o pressed
+Key 'o' released
+Key u pressed
+Key 'u' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key u pressed
+Key 'u' released
+Key t pressed
+Key 't' released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.enter released
+Key Key.shift_r released
+Key w pressed
+Key 'w' released
+Key h pressed
+Key 'h' released
+Key a pressed
+Key 'a' released
+Key t pressed
+Key 't' released
+Key s pressed
+Key 's' released
+Special key Key.space pressed
+Key Key.space released
+Key n pressed
+Key 'n' released
+Key e pressed
+Key 'e' released
+Key x pressed
+Key 'x' released
+Key t pressed
+Key 't' released
+Special key Key.shift_r pressed
+Key ? pressed
+Key Key.shift_r releSpecial key Key.ctrl pressed
+Key v pressed
+Key 'v' released
+Key Key.ctrl released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key l pressed
+Key 'l' released
+Key o pressed
+Key 'o' released
+Key g pressed
+Key 'g' released
+Key . pressed
+Key '.' released
+Key t pressed
+Key 't' released
+Key x pressed
+Key 'x' released
+Key t pressed
+Key 't' released
+Special key Key.enter pressed
+Key Key.enter released
+Special key Key.ctrl pressed
+Key c pressed
+Key c pressed
+Key c pressed
+Key 'c' released
+Key Key.ctrl released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.shift_r released
+Key Key.enter released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Special key Key.space pressed
+Key Key.space released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key . pressed
+Key '.' released
+Key e pressed
+Key 'e' released
+Key n pressed
+Key 'n' released
+Key t pressed
+Key 't' released
+Key e pressed
+Key 'e' released
+Key r pressed
+Key 'r' released
+Special key Key.space pressed
+Key Key.space released
+Key r pressed
+Key 'r' released
+Key e pressed
+Key 'e' released
+Key l pressed
+Key 'l' released
+Key e pressed
+Key 'e' released
+Key a pressed
+Key 'a' released
+Key s pressed
+Key 's' released
+Key e pressed
+Key 'e' released
+Key d pressed
+Key 'd' released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.shift_r released
+Key Key.enter released
+Key s pressed
+Key 's' released
+Key p pressed
+Key 'p' released
+Key e pressed
+Key 'e' released
+Key c pressed
+Key 'c' released
+Key i pressed
+Key 'i' released
+Key a pressed
+Key 'a' released
+Key l pressed
+Key 'l' released
+Special key Key.space pressed
+Key Key.space released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Special key Key.space pressed
+Key Key.space released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key . pressed
+Key '.' released
+Special key Key.space pressed
+Key Key.space released
+Key c pressed
+Key 'c' released
+Key t pressed
+Key 't' released
+Key r pressed
+Key 'r' released
+Key l pressed
+Key 'l' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key r pressed
+Key 'r' released
+Key e pressed
+Key 'e' released
+Key s pressed
+Key 's' released
+Key s pressed
+Key 's' released
+Key e pressed
+Key 'e' released
+Key d pressed
+Key 'd' released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.shift_r released
+Key Key.enter released
+Key s pressed
+Key 's' released
+Key p pressed
+Key 'p' released
+Key e pressed
+Key 'e' released
+Key c pressed
+Key 'c' released
+Key i pressed
+Key 'i' released
+Key a pressed
+Key 'a' released
+Key l pressed
+Key 'l' released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.backspace pressed
+Key Key.backspace released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Special key Key.space pressed
+Key Key.space released
+Key c pressed
+Key 'c' released
+Special key Key.space pressed
+Key Key.space released
+Key p pressed
+Key 'p' released
+Key r pressed
+Key 'r' released
+Key e pressed
+Key 'e' released
+Key s pressed
+Key 's' released
+Key s pressed
+Key 's' released
+Key e pressed
+Key 'e' released
+Key d pressed
+Key 'd' released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.shift_r released
+Key Key.enter released
+Special key Key.caps_lock pressed
+Key Key.caps_lock released
+Key i pressed
+Key 'i' released
+Special key Key.caps_lock pressed
+Key Key.caps_lock released
+Special key Key.space pressed
+Key Key.space released
+Key s pressed
+Key 's' released
+Key t pressed
+Key 't' released
+Key o pressed
+Key 'o' released
+Key p pressed
+Key 'p' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key b pressed
+Key 'b' released
+Key y pressed
+Key 'y' released
+Special key Key.space pressed
+Key Key.space released
+Key c pressed
+Key 'c' released
+Key t pressed
+Key 't' released
+Key r pressed
+Key 'r' released
+Key l pressed
+Key 'l' released
+Key = pressed
+Key '=' released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.shift_r pressed
+Key + pressed
+Key '+' released
+Key Key.shift_r released
+Key c pressed
+Key 'c' released
+Special key Key.backspace pressed
+Key Key.backspace released
+Special key Key.shift pressed
+Key Key.shift released
+Special key Key.caps_lock pressed
+Key Key.caps_lock released
+Key c pressed
+Key 'c' released
+Special key Key.caps_lock pressed
+Key Key.caps_lock released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.shift_r released
+Key Key.enter released
+Key a pressed
+Key 'a' released
+Key n pressed
+Key 'n' released
+Key d pressed
+Key 'd' released
+Special key Key.space pressed
+Key Key.space released
+Key b pressed
+Key 'b' released
+Key e pressed
+Key 'e' released
+Key f pressed
+Key 'f' released
+Key o pressed
+Key 'o' released
+Key r pressed
+Key 'r' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Key a pressed
+Key 'a' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Special key Key.space pressed
+Key Key.space released
+Key s pressed
+Key 's' released
+Key a pressed
+Key 'a' released
+Key v pressed
+Key 'v' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Key o pressed
+Key 'o' released
+Key s pressed
+Key 's' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key l pressed
+Key 'l' released
+Key e pressed
+Key 'e' released
+Key t pressed
+Key 't' released
+Key t pressed
+Key 't' released
+Key e pressed
+Key 'e' released
+Key r pressed
+Key 'r' released
+Key s pressed
+Key 's' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Key n pressed
+Key 'n' released
+Special key Key.space pressed
+Key Key.space released
+Key m pressed
+Key 'm' released
+Key y pressed
+Key 'y' released
+Special key Key.space pressed
+Key Key.space released
+Key d pressed
+Key 'd' released
+Key o pressed
+Key 'o' released
+Key c pressed
+Key 'c' released
+Key u pressed
+Key 'u' released
+Key m pressed
+Key 'm' released
+Key e pressed
+Key 'e' released
+Key n pressed
+Key 'n' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key n pressed
+Key 'n' released
+Key a pressed
+Key 'a' released
+Key m pressed
+Key 'm' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key f pressed
+Key 'f' released
+Key i pressed
+Key 'i' released
+Key l pressed
+Key 'l' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key ' pressed
+Key "'" released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key l pressed
+Key 'l' released
+Key o pressed
+Key 'o' released
+Key g pressed
+Key 'g' released
+Key . pressed
+Key '.' released
+Key t pressed
+Key 't' released
+Key x pressed
+Key 'x' released
+Key t pressed
+Key 't' released
+Key . pressed
+Key '.' released
+Special key Key.shift_r pressed
+Special key Key.enter pressed
+Key Key.shift_r released
+Key Key.enter released
+Key p pressed
+Key 'p' released
+Key l pressed
+Key 'l' released
+Key e pressed
+Key 'e' released
+Key a pressed
+Key 'a' released
+Key s pressed
+Key 's' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key e pressed
+Key 'e' released
+Key x pressed
+Key 'x' released
+Key a pressed
+Key 'a' released
+Key c pressed
+Key 'c' released
+Key t pressed
+Key 't' released
+Key l pressed
+Key 'l' released
+Key y pressed
+Key 'y' released
+Special key Key.space pressed
+Key Key.space released
+Key t pressed
+Key 't' released
+Key e pressed
+Key 'e' released
+Key l pressed
+Key 'l' released
+Key l pressed
+Key 'l' released
+Special key Key.space pressed
+Key Key.space released
+Key m pressed
+Key 'm' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key w pressed
+Key 'w' released
+Key h pressed
+Key 'h' released
+Key a pressed
+Key 'a' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key i pressed
+Key 'i' released
+Key s pressed
+Key 's' released
+Special key Key.space pressed
+Key Key.space released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key n pressed
+Key 'n' released
+Key e pressed
+Key 'e' released
+Key x pressed
+Key 'x' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key t pressed
+Key 't' released
+Key o pressed
+Key 'o' released
+Special key Key.space pressed
+Key Key.space released
+Key f pressed
+Key 'f' released
+Key i pressed
+Key 'i' released
+Key n pressed
+Key 'n' released
+Key i pressed
+Key 'i' released
+Key s pressed
+Key 's' released
+Key h pressed
+Key 'h' released
+Special key Key.space pressed
+Key Key.space released
+Key w pressed
+Key 'w' released
+Key i pressed
+Key 'i' released
+Key t pressed
+Key 't' released
+Key h pressed
+Key 'h' released
+Special key Key.space pressed
+Key Key.space released
+Key s pressed
+Key 's' released
+Key i pressed
+Key 'i' released
+Key m pressed
+Key 'm' released
+Key p pressed
+Key 'p' released
+Key l pressed
+Key 'l' released
+Key e pressed
+Key 'e' released
+Special key Key.space pressed
+Key Key.space released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key l pressed
+Key 'l' released
+Key o pressed
+Key 'o' released
+Key g pressed
+Key 'g' released
+Key g pressed
+Key 'g' released
+Key e pressed
+Key 'e' released
+Key r pressed
+Key 'r' released
+Key . pressed
+Key '.' released
+Special key Key.enter pressed
+Key Key.enter released
+Key 1 pressed
+Key '1' released
+Key 2 pressed
+Key '2' released
+Key 3 pressed
+Key '3' released
+Key 4 pressed
+Key '4' released
+Special key Key.enter pressed
+Key Key.enter released
+Key c pressed
+Key 'c' released
+Key a pressed
+Key 'a' released
+Key t pressed
+Key 't' released
+Special key Key.space pressed
+Key Key.space released
+Key k pressed
+Key 'k' released
+Key e pressed
+Key 'e' released
+Key y pressed
+Key 'y' released
+Key l pressed
+Key 'l' released
+Key o pressed
+Key 'o' released
+Key g pressed
+Key 'g' released
+Key . pressed
+Key '.' released
+Key t pressed
+Key 't' released
+Key x pressed
+Key 'x' released
+Key t pressed
+Key 't' released
+Special key Key.enter pressed
+Key Key.enter released
+Special key Key.shift_r pressed
+Key ~ pressed
+Key '~' released
+Key Key.shift_r released
+Special key Key.space pressed
+Key Key.space released
+Key / pressed
+Key '/' released
+Special key Key.caps_lock pressed
+Key Key.caps_lock released
+Key d pressed
+Key 'd' released
+Special key Key.caps_lock pressed
+Key Key.caps_lock released
+Key o pressed
+Key 'o' released
+Key c pressed
+Key 'c' released
+Key u pressed
+Key 'u' released
+Key m pressed
+Key 'm' released
+Key e pressed
+Key 'e' released
+Key n pressed
+Key 'n' released
+Key t pressed
+Key 't' released
+Key s pressed
+Key 's' released
+Special key Key.enter pressed
+Key Key.enter released
+
